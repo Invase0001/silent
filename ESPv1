@@ -1,0 +1,69 @@
+local transparency = .8
+
+				local Players = game:GetService("Players")
+				local function _ESP(c)
+					repeat wait() until c.PrimaryPart ~= nil
+					for i,p in pairs(c:GetChildren()) do
+						if p.ClassName == "Part" or p.ClassName == "MeshPart" then
+							if p:FindFirstChild("wWesp") then p.wWesp:Destroy() end
+							local a = Instance.new("BoxHandleAdornment",p)
+							a.Name = "wWesp"
+							a.Size = p.Size
+							a.Color = game.Players[c.Name].TeamColor
+							a.Transparency = transparency
+							a.AlwaysOnTop = true    
+							a.Visible = true    
+							a.Adornee = p
+							a.ZIndex = true    
+								
+						end
+
+					end
+					local gg = Instance.new("BillboardGui", c.Head)
+					gg.Active = true
+					gg.AlwaysOnTop = true
+					gg.Enabled = true
+					gg.MaxDistance = math.huge
+					gg.Size = UDim2.new(10,0,1,0)
+					gg.StudsOffset = Vector3.new(0, 1.2000000476837, 0)
+					gg.ZIndexBehavior = Enum.ZIndexBehavior.Global
+					local gg2 = Instance.new("TextLabel", gg)
+					gg2.Active = false
+					gg2.BackgroundTransparency = 1
+					gg2.BorderSizePixel = 1
+					gg2.Position = UDim2.new(0,0,0,0)
+					gg2.Size = UDim2.new(1,0,1,0)
+					gg2.Visible = true
+					gg2.ZIndex = 1
+					gg2.Font = Enum.Font.GothamSemibold
+					gg2.MaxVisibleGraphemes = -1
+					gg2.LineHeight = 1
+					gg2.Text = c.Name
+					gg2.TextColor3 = Color3.new(game.Players[c.Name].TeamColor)
+					gg2.TextScaled = false
+					gg2.TextSize = 20
+					gg2.TextStrokeTransparency = 1
+					gg2.TextTruncate = Enum.TextTruncate.AtEnd
+					gg2.TextWrapped = false
+					gg2.TextXAlignment = Enum.TextXAlignment.Center
+					gg2.RichText = true
+					
+				end
+				local function ESP()
+					for i,v in pairs(Players:GetChildren()) do
+						if v ~= game.Players.LocalPlayer then
+							if v.Character then
+								_ESP(v.Character)
+							end
+							v.CharacterAdded:Connect(function(chr)
+								_ESP(chr)
+							end)
+						end
+					end
+					Players.PlayerAdded:Connect(function(player)
+						player.CharacterAdded:Connect(function(chr)
+							_ESP(chr)
+						end)  
+					end)
+				end
+				ESP()
