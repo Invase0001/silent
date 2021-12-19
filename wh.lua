@@ -1,4 +1,3 @@
-local wh = {
-  ["lnvase"]  = true;
-  
-}
+local wh = {}
+wh.White = {"lnvase"}
+return wh;
