@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Silenthub
 
-You can use the [editor on GitHub](https://github.com/Invase0001/silent/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The best day of dusk exploit there is.
+### Easy to use
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Silenthub is very easy to use, it is made in a way that anyone can understand, and start using it immediately.
 
-### Markdown
+### Cheap
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Silenthub is only 4.20CAD.
 
-```markdown
-Syntax highlighted code block
+### Reilable
 
-# Header 1
-## Header 2
-### Header 3
+Silenthub is made by Invase, an Oldgen that was banned unfairly.
 
-- Bulleted
-- List
+### Best modules
 
-1. Numbered
-2. List
+It is basicly aegisploit on anchor 3
 
-**Bold** and _Italic_ and `Code` text
+## Buy
+To buy silenthub, go [here](https://sellix.io/product/61dc96f77c987) and follow the steps.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Invase0001/silent/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
